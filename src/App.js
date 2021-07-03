@@ -47,7 +47,7 @@ function SignIn() {
   }
   return (
     <>
-      <h1>Chat App</h1>
+      <h1>Chat Room</h1>
       <button onClick={signInWithGoogle}>Sign in with Google</button>
     </>
   )
