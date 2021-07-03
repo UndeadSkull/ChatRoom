@@ -1,5 +1,6 @@
 body {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  border-radius: 15px;
 }
 
 .App {
@@ -7,11 +8,12 @@ body {
   /* max-width: 728px; */
   max-width: 420px;
   margin: 0 auto;
+  border-radius: 15px;
 }
 
 .App header {
-  background-color: #181717;
-  height:8vh;
+  background-color: #1817171c;
+  height: 8vh;
   min-height: 50px;
   color: white;
   position: fixed;
@@ -25,20 +27,28 @@ body {
   z-index: 99;
   padding: 10px;
   box-sizing: border-box;
+  border-radius: 15px 15px 0 0;
 }
 
 .App section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
-  background-color: rgb(40, 37, 53);
+  border-radius: 15px;
+  max-height: 100vh;
+  /* background-color: rgb(40, 37, 53); */
+  background: #C9D6FF;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E2E2E2, #C9D6FF);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E2E2E2, #C9D6FF);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 main {
   padding: 10px;
-  height: 80vh;
-  margin: 10vh 0 10vh;
+  /* height: 84vh; */
+  margin: 8vh 0px 8vh;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -49,7 +59,7 @@ main::-webkit-scrollbar {
 }
 
 main::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: #1e1e2409;
 }
 
 main::-webkit-scrollbar-thumb {
@@ -57,10 +67,10 @@ main::-webkit-scrollbar-thumb {
 }
 
 form {
-  height: 10vh;
+  height: 8vh;
   position: fixed;
   bottom: 0;
-  background-color: rgb(24, 23, 23);
+  /* background-color: rgb(24, 23, 23); */
   width: 100%;
   /* max-width: 728px; */
   max-width: 420px;
@@ -69,39 +79,50 @@ form {
 }
 
 form button {
+  background: rgba(58, 58, 58, 0.131);
   width: 20%;
-  background-color: rgb(56, 56, 143);
+  border-radius: 0 15px 15px 0;
+  font-size: 1.25rem;
 }
 
+.submitBtnSpan {
+  background-color: rgba(56, 56, 143, 0.4);
+  padding: 13px 11px;
+  border: 2px solid rgba(255, 255, 255, 0.352);
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px -2px black;
+}
 
 input {
   line-height: 1.5;
   width: 100%;
-  font-size: 1.5rem;
-  background: rgb(58, 58, 58);
-  color: white;
+  font-size: 1.25rem;
+  background: rgba(58, 58, 58, 0.131);
+  color: rgba(0, 0, 0, 0.655);
   outline: none;
   border: none;
-  padding: 0 10px;
+  padding: 0 25px;
+  border-radius: 15px 0 0 15px;
 }
 
 button {
-  background-color: #282c34; /* Green */
+  background-color: #282c34;
+  /* Green */
   border: none;
   color: white;
-  padding: 8px 16px;
+  padding: 8px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  border-radius: 15px;
 }
 
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-
 
 .sign-in {
   color: #282c34;
@@ -110,9 +131,6 @@ button:disabled {
   margin: 0 auto;
 }
 
-
-
-
 ul, li {
   text-align: left;
   list-style: none;
@@ -120,9 +138,9 @@ ul, li {
 
 p {
   max-width: 500px;
-  margin-bottom: 12px;
+  margin: 6px 0 6px 0;
   line-height: 24px;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 25px;
   position: relative;
   color: white;
@@ -134,24 +152,29 @@ p {
   align-items: center;
 }
 
-
 .sent {
   flex-direction: row-reverse;
 }
 
 .sent p {
-  color: white;
-  background: #0b93f6;
-  align-self: flex-end;
-}
-.received p {
-  background: #e5e5ea;
+  /* color: white; */
   color: black;
+  background: #0b94f61a;
+  align-self: flex-end;
+  border: 2px solid;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.received p {
+  background: #e5e5ea56;
+  color: black;
+  border: 2px solid;
+  border-color: rgba(255, 255, 255, 0.117);
 }
 
 img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   margin: 2px 5px;
 }
